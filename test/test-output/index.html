@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -112,20 +112,6 @@
                       <br/>
                     </div> <!-- method-list-content failed suite-proji -->
                   </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-proji" class="hide-methods passed suite-proji"> (hide)</a> <!-- hide-methods passed suite-proji -->
-                      <a href="#" panel-name="suite-proji" class="show-methods passed suite-proji"> (show)</a> <!-- show-methods passed suite-proji -->
-                    </span>
-                    <div class="method-list-content passed suite-proji">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-proji" title="proji.Dashboard" hash-for-method="VerifyDashTest">VerifyDashTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-proji -->
-                  </li>
                 </ul>
               </div> <!-- suite-section-content -->
             </div> <!-- result-section -->
@@ -139,45 +125,6 @@
           <div class="suite-proji-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">proji.Dashboard</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="SelectProjectTest">
-                  </a> <!-- SelectProjectTest -->
-                  <span class="method-name">SelectProjectTest</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementNotVisibleException: element not interactable: Element is not currently visible and may not be manipulated
-  (Session info: chrome=74.0.3729.169)
-  (Driver info: chromedriver=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926),platform=Linux 4.15.0-50-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;Ankit-RW&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-50-generic&apos;, java.version: &apos;1.8.0_212&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628388 (4a34a70827ac54..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:46011}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.169, webStorageEnabled: true}
-Session ID: 89846af5e0bde9f02b3166d5feb846c4
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at org.openqa.selenium.support.ui.Select.setSelected(Select.java:324)
-	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:201)
-	at proji.Dashboard.SelectProjectTest(Dashboard.java:37)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-proji-class-failed -->
-          <div class="suite-proji-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
               <span class="class-name">proji.Demosite</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -186,16 +133,16 @@ Session ID: 89846af5e0bde9f02b3166d5feb846c4
                   <a name="SelectProdTest">
                   </a> <!-- SelectProdTest -->
                   <span class="method-name">SelectProdTest</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;Product Category&apos;]&quot;}
   (Session info: chrome=74.0.3729.169)
   (Driver info: chromedriver=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926),platform=Linux 4.15.0-50-generic x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;Ankit-RW&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-50-generic&apos;, java.version: &apos;1.8.0_212&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628388 (4a34a70827ac54..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:37219}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.169, webStorageEnabled: true}
-Session ID: 6bb1b195b17f6721f953e2fe99deb48c
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628388 (4a34a70827ac54..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:39089}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.169, webStorageEnabled: true}
+Session ID: a41eca5a253355dd53d66a757bbc7036
 *** Element info: {Using=xpath, value=//a[text()=&apos;Product Category&apos;]}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
@@ -216,21 +163,45 @@ Session ID: 6bb1b195b17f6721f953e2fe99deb48c
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-proji-class-failed -->
-          <div class="suite-proji-class-passed">
+          <div class="suite-proji-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">proji.Dashboard</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="VerifyDashTest">
-                  </a> <!-- VerifyDashTest -->
-                  <span class="method-name">VerifyDashTest</span>
+                  <a name="SelectProjectTest">
+                  </a> <!-- SelectProjectTest -->
+                  <span class="method-name">SelectProjectTest</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotVisibleException: element not interactable: Element is not currently visible and may not be manipulated
+  (Session info: chrome=74.0.3729.169)
+  (Driver info: chromedriver=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926),platform=Linux 4.15.0-50-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;Ankit-RW&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-50-generic&apos;, java.version: &apos;1.8.0_212&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628388 (4a34a70827ac54..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:43127}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.169, webStorageEnabled: true}
+Session ID: 2a944f5885d649828d7283af57f9c741
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.ui.Select.setSelected(Select.java:324)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:201)
+	at proji.Dashboard.SelectProjectTest(Dashboard.java:37)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-proji-class-passed -->
+          </div> <!-- suite-proji-class-failed -->
         </div> <!-- panel proji -->
         <div panel-name="test-xml-proji" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -241,16 +212,20 @@ Session ID: 6bb1b195b17f6721f953e2fe99deb48c
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;proji&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;testngTest&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;proji.Dashboard&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- testngTest --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;testngTest1&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;proji.Demosite&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- testngTest1 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;testngTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;proji.Dashboard&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;SelectProjectTest&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- proji.Dashboard --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- testngTest --&gt;
 &lt;/suite&gt; &lt;!-- proji --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -262,10 +237,10 @@ Session ID: 6bb1b195b17f6721f953e2fe99deb48c
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">testngTest (1 class)</span>
+                <span class="test-name">testngTest1 (1 class)</span>
               </li>
               <li>
-                <span class="test-name">testngTest1 (1 class)</span>
+                <span class="test-name">testngTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -291,24 +266,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'SelectProjectTest')
 data.setCell(0, 2, 'proji.Dashboard')
-data.setCell(0, 3, 5390);
+data.setCell(0, 3, 5319);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'VerifyDashTest')
-data.setCell(1, 2, 'proji.Dashboard')
-data.setCell(1, 3, 5066);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'SelectProdTest')
-data.setCell(2, 2, 'proji.Demosite')
-data.setCell(2, 3, 31);
+data.setCell(1, 1, 'SelectProdTest')
+data.setCell(1, 2, 'proji.Demosite')
+data.setCell(1, 3, 127);
 window.suiteTableData['proji']= { tableData: data, tableDiv: 'times-div-proji'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-proji">
               </div> <!-- times-div-proji -->
             </div> <!-- times-div -->
@@ -323,9 +294,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-proji" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">proji.Dashboard</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">VerifyDashTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-proji" class="panel">
@@ -334,46 +312,34 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">proji.Dashboard</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">OpenDashboardTest</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">SelectProjectTest</span>
-                <span class="method-start">47889 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">CloseBrowserTest</span>
-                <span class="method-start">53286 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">OpenDashboardTest</span>
-                <span class="method-start">53424 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">VerifyDashTest</span>
-                <span class="method-start">91075 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">CloseBrowserTest</span>
-                <span class="method-start">96142 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
               <div class="chronological-class-name">proji.Demosite</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">Siteopen</span>
-                <span class="method-start">96446 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">SelectProdTest</span>
-                <span class="method-start">103415 ms</span>
+                <span class="method-start">15589 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">proji.Dashboard</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">OpenDashboardTest</span>
+                <span class="method-start">15751 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">SelectProjectTest</span>
+                <span class="method-start">58780 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">CloseBrowserTest</span>
+                <span class="method-start">64106 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

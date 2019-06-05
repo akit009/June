@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [proji]">
+  <test thread-count="5" name="testngTest1(failed)">
+    <classes>
+      <class name="proji.Demosite">
+        <methods>
+          <include name="SelectProdTest"/>
+          <include name="Siteopen"/>
+        </methods>
+      </class> <!-- proji.Demosite -->
+    </classes>
+  </test> <!-- testngTest1(failed) -->
   <test thread-count="5" name="testngTest(failed)">
     <classes>
       <class name="proji.Dashboard">
@@ -12,14 +22,4 @@
       </class> <!-- proji.Dashboard -->
     </classes>
   </test> <!-- testngTest(failed) -->
-  <test thread-count="5" name="testngTest1(failed)">
-    <classes>
-      <class name="proji.Demosite">
-        <methods>
-          <include name="SelectProdTest"/>
-          <include name="Siteopen"/>
-        </methods>
-      </class> <!-- proji.Demosite -->
-    </classes>
-  </test> <!-- testngTest1(failed) -->
 </suite> <!-- Failed suite [proji] -->

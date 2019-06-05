@@ -2,18 +2,21 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="proji">
-	<test name="testngTest">
-		<classes>
-			<class name="proji.Dashboard" />
-			 <methods>
-               <include name="VerifyDashTest" />
-             </methods>
- 		</classes>
-	</test>
+
 	
 	<test name="testngTest1">
 		<classes>
 			<class name="proji.Demosite" />
 		</classes>
+	</test>
+	
+	<test name="testngTest">
+		<classes>
+			<class name="proji.Dashboard">
+			 <methods>
+               <include name="SelectProjectTest"/>
+             </methods>
+             </class>
+	    </classes>
 	</test>
 </suite>

@@ -34,7 +34,7 @@ public class Dashboard {
 		Thread.sleep(5000);
 		WebElement lst = driver.findElement(By.xpath("//select[@id='chosen-select-project']"));
 		Select sel = new Select(lst);
-		sel.selectByValue("66c788edc18bf93dc2efbfc51d3fdb56");
+		sel.selectByValue("62decf09231c2bfb711301cc6d300d5f");
 
 	}
 	
